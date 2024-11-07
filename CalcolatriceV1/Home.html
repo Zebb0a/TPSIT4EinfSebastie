@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Il calcolatore</title>
+    <link rel="stylesheet" href="./styles/Style.css">
+    <link rel="icon" type="image/x-icon" href="./img/calcolatrice.png">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <div class="blurred-text">
+                <div class="text-container">
+                    <span>C</span>
+                    <span>a</span>
+                    <span>l</span>
+                    <span>c</span>
+                    <span>o</span>
+                    <span>l</span>
+                    <span>a</span>
+                    <span>t</span>
+                    <span>r</span>
+                    <span>i</span>
+                    <span>c</span>
+                    <span>e</span>
+                  </div>  
+                <input class="case" type="text" id="value1" placeholder="inserisci num 1">
+                <br>
+                <input class="case" type="text" id="value2" placeholder="inserisci num 2">
+                <br>
+                <br> 
+                <input class="button" type="button" value="+" onclick="add()">
+                <input class="button" type="button" value="-" onclick="sott()">
+                <input class="button" type="button" value="*" onclick="molt()">
+                <input class="button" type="button" value="/" onclick="divi()">
+                <br>
+                <br>
+                <div class="risultato">
+                    <p id="result"></p>
+                </div> 
+            </div>
+        </form>  
+    </div>
+</body>
+    <script src="./script/codice.js"></script>
+</html>
