@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Anagrafica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Inserisci i tuoi dati</h2>
+
+    <form id="datiNelForm">
+        <label>Nome:</label>
+        <input type="text" id="nome" ><br>
+
+        <label>Cognome:</label>
+        <input type="text" id="cognome" ><br>
+
+        <label>Indirizzo:</label>
+        <input type="text" id="indirizzo" ><br>
+
+        <label>Città:</label>
+        <input type="text" id="citta" ><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" ><br>
+
+        <button type="button"  class="btn" onclick="aggiungiDati()">Aggiungi</button>
+    </form>
+
+    <h2>Dati Registrati</h2>
+    <table id="datiTabella">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Indirizzo</th>
+                <th>Città</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script src="./codice.js"></script>
+
+</body>
+</html>
