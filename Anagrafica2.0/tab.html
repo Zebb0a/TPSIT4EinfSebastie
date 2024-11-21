@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Tabella</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/@.png">
+</head>
+<body onload="ricarica()">
+    <div class="contenuto">
+        <table>
+            <thead>
+                <tr>
+                <th>   </th>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Indirizzo</th>
+                <th>Città</th>
+                <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tabella">
+            </tbody>
+        </table> 
+    </div>
+    <div class="bottoni">
+        <button class="btn" onclick="apriScheda()">Torna indietro</button><br><br>
+        <button class="btn" id="azzera">Resetta Tabella</button>
+    </div> 
+    <script src="./script/tab.js"></script>
+</body>
+</html>
