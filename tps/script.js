@@ -11,7 +11,7 @@ function handleFileUpload(event) {
         rows.forEach((row, index) => {
             const tr = document.createElement('tr');
             row.split(',').forEach(col => {
-                const cell = document.createElement(index === 0 ? 'th' : 'td');
+                const cell = document.createElement(index == 0 ? 'th' : 'td');
                 cell.textContent = col.trim();
                 tr.appendChild(cell);
             });
