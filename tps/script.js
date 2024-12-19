@@ -1,32 +1,67 @@
-function handleFileUpload(event) {
-    const file = event.target.files[0];
-    if (!file) return;
+let risultato = [];
+let iter = 1;
 
-    const reader = new FileReader();
-    reader.onload = function() {
-        const rows = reader.result.split('\n');
-        const table = document.getElementById('csvTable');
-        table.innerHTML = '';
-
-        rows.forEach((row, index) => {
-            const tr = document.createElement('tr');
-            row.split(',').forEach(col => {
-                const cell = document.createElement(index == 0 ? 'th' : 'td');
-                cell.textContent = col.trim();
-                tr.appendChild(cell);
-            });
-            table.appendChild(tr);
-        });
+function leggiFile(input) {
+    const file = input.files[0];
+  
+    const lettore = new FileReader();
+  
+    lettore.readAsText(file);
+  
+    lettore.onload = function() {
+        risultato = lettore.result;
+        creaTabella(); 
     };
+  
+    lettore.onerror = function() {
+        alert(lettore.error);
+    };
+}
 
-    reader.readAsText(file);
+function creaTabella() {
+    let csv = risultato.split("\n");
+    let categorie = csv[0].split(",");
+  
+    const tabella = document.getElementById("csvTable");
+    tabella.innerHTML = "";
+    const rigaIntestazione = document.createElement("tr");
+  
+    for (let i in categorie) {
+        let th = document.createElement("th");
+        th.style.cssText = "color: #0bf7ff;";
+        th.innerHTML = categorie[i].replaceAll('"', '');
+        rigaIntestazione.appendChild(th);
+    }
+    tabella.appendChild(rigaIntestazione);
+  
+    for (let i = 1; i < csv.length; i++) {
+        const dati = csv[i].replaceAll('"', '');
+        let datiEffettivi = csv[i].split(",");
+        const rigaTabella = document.createElement("tr");
+        const intestazioneRiga = document.createElement("th");
+        intestazioneRiga.innerHTML = iter;
+        rigaTabella.appendChild(intestazioneRiga);
+        iter++;
+
+        for (let j = 0; j < datiEffettivi.length; j++) {
+            const cellaTabella = document.createElement("td");
+            cellaTabella.innerHTML = datiEffettivi[j] ? datiEffettivi[j].replaceAll('"', '') : ' '; 
+            rigaTabella.appendChild(cellaTabella);
+        }
+        tabella.appendChild(rigaTabella);
+    }
 }
 
 document.getElementById('uploadButton').addEventListener('click', () => {
     document.getElementById('csvFileInput').click();
 });
 
-document.getElementById('csvFileInput').addEventListener('change', handleFileUpload);
+document.getElementById('csvFileInput').addEventListener('change', (evento) => {
+    leggiFile(evento.target);
+});
+
+
+
 
 
 
