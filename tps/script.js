@@ -25,6 +25,9 @@ function creaTabella() {
     const tabella = document.getElementById("csvTable");
     tabella.innerHTML = "";
     const rigaIntestazione = document.createElement("tr");
+
+    const thVuoto = document.createElement("th");
+    rigaIntestazione.appendChild(thVuoto);
   
     for (let i in categorie) {
         let th = document.createElement("th");
