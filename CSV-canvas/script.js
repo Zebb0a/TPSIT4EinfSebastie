@@ -58,9 +58,9 @@ function disegna() {
     // linea
     ctx.beginPath();
     for (var i = 0; i < result.length; i++) {
-        var row = result[i].split(","); 
-        var anno = row[0].replace(/"/g, '');
-        var persone = Number(row[1].replace(/"/g, ''));
+        var linea = result[i].split(","); 
+        var anno = linea[0].replace(/"/g, '');
+        var persone = Number(linea[1].replace(/"/g, ''));
 
         var x = 50 + (i * 30); //30px tra anni
         var y = 450 - (persone / max * 400);
@@ -75,9 +75,9 @@ function disegna() {
         ctx.fillText(anno, x - 10, 470);
         if (i == 0) {
             for (var j = 0; j <= 5; j++) {
-                var yLabel = (max / 5) * j; 
-                var yPos = 450 - (yLabel / max * 400);
-                ctx.fillText(Math.round(yLabel).toString(), 5, yPos + 5);
+                var ye = (max / 5) * j; 
+                var yp = 450 - (ye / max * 400);
+                ctx.fillText(Math.round(ye).toString(), 5, yp + 5);
             }
         }
     }
