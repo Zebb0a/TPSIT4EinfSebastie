@@ -54,6 +54,7 @@ function disegna() {
         ctx.stroke();
     }
     ctx.strokeStyle = "#908435";
+    ctx.fillText(anno, x - 10, 470);
 
     // linea
     ctx.beginPath();
@@ -72,7 +73,6 @@ function disegna() {
         }
 
         //numeri laterali
-        ctx.fillText(anno, x - 10, 470);
         if (i == 0) {
             for (var j = 0; j <= 5; j++) {
                 var ye = (max / 5) * j; 
