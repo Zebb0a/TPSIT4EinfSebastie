@@ -77,8 +77,8 @@ function disegna() {
         //numeri laterali
         ctx.fillText(anno, x - 10, 470);
         if (i == 0) {
-            for (var j = 0; j <= 5; j++) {
-                var ye = (max / 5) * j; 
+            for (var j = 0; j <= 8; j++) {
+                var ye = (max / 8) * j; 
                 var yp = 450 - (ye / max * 400);
                 ctx.fillText(Math.round(ye).toString(), 5, yp + 5);
             }
