@@ -1,6 +1,6 @@
 var result = [];
 
-document.getElementById('uploadButton').addEventListener('click', function() {
+document.getElementById('Button').addEventListener('click', function() {
     document.getElementById('fileInput').click(); 
 });
 
