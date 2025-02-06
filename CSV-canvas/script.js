@@ -1,6 +1,6 @@
 var result = [];
 
-document.getElementById('Button').addEventListener('click', function() {
+document.getElementById('button').addEventListener('click', function() {
     document.getElementById('fileInput').click(); 
 });
 
@@ -26,13 +26,13 @@ function disegna() {
     ctx.lineWidth = 2;           
     ctx.font = "12px Arial";    
 
-    ctx.fillText("Numero di persone sbarcate per anno", 300, 30);
+    ctx.fillText("Numero di persone sbarcate per anno", 400, 30);
 
     ctx.beginPath();
     ctx.moveTo(50, 450); 
     ctx.lineTo(50, 50);
     ctx.moveTo(50, 450); 
-    ctx.lineTo(750, 450);
+    ctx.lineTo(950, 450);
     ctx.stroke();
 
     //valore massimo
@@ -42,9 +42,12 @@ function disegna() {
         if (value > max) max = value;
     }
 
+    //larcghezza dinamica
+    var lung = (950 - 50) / result.length;
+
     // Disegna le linee verticali trasparenti
     for (var i = 0; i < result.length; i++) {
-        var x = 50 + (i * 30); //posizione anno 
+        var x = 50 + (i * lung);
 
         //stile
         ctx.strokeStyle = "rgba(44, 62, 80, 0.1)"; 
@@ -54,7 +57,7 @@ function disegna() {
         ctx.stroke();
     }
     ctx.strokeStyle = "#908435";
-
+    
     // linea
     ctx.beginPath();
     for (var i = 0; i < result.length; i++) {
@@ -62,7 +65,7 @@ function disegna() {
         var anno = linea[0].replace(/"/g, '');
         var persone = Number(linea[1].replace(/"/g, ''));
 
-        var x = 50 + (i * 30); //30px tra anni
+        var x = 50 + (i * lung);
         var y = 450 - (persone / max * 400);
 
         if (i == 0) {
