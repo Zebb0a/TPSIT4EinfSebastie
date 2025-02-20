@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco Utenti</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./@.png" type="image/x-icon">
+</head>
+<body onload="ricarica()">
+    <div class="container">
+        <button onclick="resetTabella()">Resetta</button>  
+        <table>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Indirizzo</th>
+                    <th>Città</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tabella">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
