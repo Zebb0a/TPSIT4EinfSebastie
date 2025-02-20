@@ -1,6 +1,6 @@
 const users = [];
 
-let iter = 1;
+let it = 1;
 let table = document.getElementById("tabella");
 
 function push(nome, cognome, indirizzo, citta, email) {
@@ -22,30 +22,30 @@ function utente() {
         document.getElementById("citta").value,
         document.getElementById("email").value
     );
-    localStorage.setItem("user" + iter, JSON.stringify(users[users.length - 1]));
-    localStorage.setItem("counter", iter);
+    localStorage.setItem("p" + it, JSON.stringify(users[users.length - 1]));
+    localStorage.setItem("i", it);
     document.getElementById("nome").value = "";
     document.getElementById("cognome").value = "";
     document.getElementById("indirizzo").value = "";
     document.getElementById("citta").value = "";
     document.getElementById("email").value = "";
-    iter++;
+    it++;
 }
 
 function ricarica() {
-    iter = parseInt(localStorage.getItem("counter") || "1");
-    for (let i = 0; i < iter; i++) {
-        const user = JSON.parse(localStorage.getItem("user" + (i + 1)));
-        const tableRow = document.createElement("tr");
-        const tableHead = document.createElement("th");
-        tableHead.innerHTML = i + 1;
-        tableRow.appendChild(tableHead);
-        for (let y = 0; y < user.length; y++) {
-            const tableD = document.createElement("td");
-            tableD.innerHTML = user[y];
-            tableRow.appendChild(tableD);
+    it = parseInt(localStorage.getItem("i"));
+    for (let i = 0; i < it; i++) {
+        const p = JSON.parse(localStorage.getItem("p" + (i + 1)));
+        const tRiga = document.createElement("tr");
+        const intestazione = document.createElement("th");
+        intestazione.innerHTML = i + 1;
+        tRiga.appendChild(intestazione);
+        for (let y = 0; y < p.length; y++) {
+            const tc = document.createElement("td");
+            tc.innerHTML = p[y];
+            tRiga.appendChild(tc);
         }
-        document.getElementById("tabella").appendChild(tableRow);
+        document.getElementById("tabella").appendChild(tRiga);
     }
 }
 
