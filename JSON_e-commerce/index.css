@@ -93,7 +93,7 @@ h2 {
 
 .prodotto {
   width: 280px;
-  padding: 20px; 
+  padding: 20px;
   text-align: center;
   border: 1px solid #BDC3C7;
   border-radius: 12px;
@@ -141,7 +141,7 @@ h2 {
 
   .prodotto {
     width: 90%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
   nav {
@@ -158,11 +158,11 @@ h2 {
   }
 
   .home {
-    padding: 20px; 
+    padding: 20px;
   }
 
   .home h1 {
-    font-size: 2.2em; 
+    font-size: 2.2em;
   }
 
   .home h2 {
@@ -170,13 +170,13 @@ h2 {
   }
 
   .prodotti-home {
-    gap: 20px; 
+    gap: 20px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .home h1 {
-    font-size: 1.8em; /* Smaller heading on very small screens */
+    font-size: 1.8em;
   }
 
   .home h2 {
@@ -184,11 +184,11 @@ h2 {
   }
 
   .prodotti-home {
-    gap: 15px; /* Reduce the gap between products */
+    gap: 15px;
   }
 
   .prodotto {
-    width: 100%; /* Ensure products take full width on small screens */
+    width: 100%;
     margin-bottom: 15px;
   }
 }
