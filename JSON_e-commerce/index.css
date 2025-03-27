@@ -153,7 +153,7 @@ h2 {
   }
 
   .prodotto {
-    width: 90%;
+    width: 80%;
     margin-bottom: 15px;
   }
 
@@ -186,10 +186,11 @@ h2 {
   .prodotti-home {
     gap: 10px;
     padding: 0 10px;
+    justify-content: center;
   }
 
   .prodotto {
-    width: 100%;
+    width: 95%;
     margin-bottom: 15px;
   }
 }
