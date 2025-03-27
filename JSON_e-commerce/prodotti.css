@@ -13,6 +13,7 @@ header {
   background-color: #2C3E50;
   padding: 20px 0; 
   width: 100%;
+  position: relative;
 }
 
 nav {
@@ -23,7 +24,7 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; 
   list-style: none;
   margin: 0;
   padding: 0;
@@ -36,7 +37,7 @@ nav ul li {
 nav ul li a {
   color: #ECF0F1;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 22px; 
   padding: 10px 15px; 
   transition: color 0.3s ease;
 }
@@ -59,7 +60,7 @@ nav ul li a:hover {
 }
 
 .menuS {
-  width: 200px;
+  width: 250px;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -67,7 +68,7 @@ nav ul li a:hover {
 }
 
 .menuS h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #333;
   margin-bottom: 20px;
 }
@@ -103,7 +104,7 @@ nav ul li a:hover {
 .dettagliProd {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
@@ -200,7 +201,7 @@ nav ul li a:hover {
   }
 
   nav ul li a {
-    font-size: 16px; 
+    font-size: 18px; 
     padding: 8px 12px; 
   }
 }
@@ -234,7 +235,7 @@ nav ul li a:hover {
   }
 
   nav ul li a {
-    font-size: 14px; 
+    font-size: 16px; 
     padding: 10px 20px;
   }
 }
