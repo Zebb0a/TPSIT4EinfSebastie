@@ -140,7 +140,8 @@ h2 {
   }
 
   .prodotto {
-    width: 90%;
+    width: 100%;
+    max-width: 90%; 
     margin-bottom: 20px;
   }
 
@@ -190,5 +191,9 @@ h2 {
   .prodotto {
     width: 100%;
     margin-bottom: 15px;
+  }
+
+  nav ul {
+    font-size: 18px;
   }
 }
