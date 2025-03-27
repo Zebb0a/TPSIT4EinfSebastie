@@ -1,0 +1,17 @@
+{
+  "shonen": [
+    { "nome": "One Piece - Volume 1", "prezzo": "€9.99", "immagine": "./Foto/one-piece.jpg" },
+    { "nome": "Naruto - Volume 1", "prezzo": "€8.99", "immagine": "./Foto/naruto.jpg" },
+    { "nome": "Dragon Ball - Volume 1", "prezzo": "€7.99", "immagine": "./Foto/dragonball.jpg" }
+  ],
+  "seinen": [
+    { "nome": "Attack on Titan - Volume 1", "prezzo": "€10.99", "immagine": "./Foto/AOT.jpg" },
+    { "nome": "Tokyo Ghoul - Volume 1", "prezzo": "€8.50", "immagine": "./Foto/tokyo-ghoul.jpg" }
+  ],
+  "Isekai": [
+    { "nome": "Chronicles of an Aristocrat Reborn in Another World - Volume 1", "prezzo": "€12.99", "immagine": "./Foto/Chronicles of an Aristocrat Reborn in Another World.jpg" },
+    { "nome": "Tensei shitara slime datta ken - Volume 1", "prezzo": "€10.50", "immagine": "./Foto/tensei shitara slime datta ken.jpg" }
+  ]
+}
+
+  
