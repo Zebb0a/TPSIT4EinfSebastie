@@ -1,0 +1,245 @@
+body {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  text-align: center;
+  padding: 15px;
+  color: #ffa502;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  background-color: #2c2c3e;
+  box-shadow: 0 2px 15px rgba(0, 191, 255, 0.1);
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand {
+  color: #ff6b6b ;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(255, 107, 107, 0.3);
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  color: #f1f1f1;
+  margin: 0 10px;
+  position: relative;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffa502;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #ffa502;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-nav .nav-link.active {
+  color: #00bfff ;
+  font-weight: bold;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c2c3e;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sidebar h3 {
+  color: #ffa502;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  border-radius: 12px;
+  background-color: #1e1e2f;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);
+  padding: 10px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: block;
+  color: #ffa502;
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid #ffa502;
+  border-radius: 20px;
+  background-color: #2c2c3e;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.sidebar a:hover {
+  color: #ffd32a;
+  border-color: #ffd32a;
+  background-color: #1e1e2f;
+}
+
+.col {
+  perspective: 1000px;
+}
+
+.card {
+  max-width: 100%;
+  margin: 20px auto;
+  background-color: #2c2c3e;
+  border: none;
+  border-radius: 16px;
+  color: #f1f1f1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 165, 2, 0.1);
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #444;
+}
+
+.card-title {
+  color: #ffa502;
+  font-size: 1.2rem;
+  margin: 12px 0 8px;
+}
+
+.card-body {
+  text-align: center;
+  background-color: #2c2c3e;
+}
+
+.descrizione-prodotto {
+  text-align: center;
+  color: #dcdde1;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.prezzo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+  text-align: center;
+  color: #888;
+  display: none;
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: #2c2c3e;
+  border: solid 2px #3498db;
+  font-family: inherit;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6);
+}
+
+footer {
+  color: #888;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#valutazioni-salvate h5 {
+  color: #ffa502;
+}
+
+#valutazioni-salvate .border {
+  border-color: #ffa502;
+}
+
+textarea, input[type="number"] {
+  background-color: #2c2c3e;
+  color: #f1f1f1;
+  border: 1px solid #ffa502;
+}
+
+textarea:focus, input[type="number"]:focus {
+  border-color: #ffd32a;
+  box-shadow: 0 0 6px rgba(255, 211, 42, 0.4);
+  outline: none;
+}
+
+.stelle {
+  font-size: 2rem;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+}
+
+.stelle span {
+  padding: 0 5px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.stelle span.attiva {
+  color: #ffa502;
+  transform: scale(1.2);
+}
+
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-image: none ;
+  opacity: 0;
+}
+
+
+.carousel-control-next {
+  background: transparent ;
+  border: none ;
+  box-shadow: none ;
+}
+
+  
+  

@@ -1,0 +1,43 @@
+{
+    "anagrafica": {
+      "nome": "Yamato",
+      "cognome": "Kurosawa",
+      "indirizzo": "Via dei Ronin 47",
+      "citta": "Kyoto",
+      "user": "samurai01",
+      "psw": "katana2025"
+    },
+    "prodotti": [
+      {
+        "id": "001",
+        "marca": "Zangetsu",
+        "tipo": "Black Soul",
+        "img": "./images/zangetsu_1.jpg",
+        "img2":"./images/zangetsu_2.jpg",
+        "img3":"./images/zangetsu_3.jpg",
+        "descrizione": "Katana nera con dettagli rossi. Lama affilata, ideale per combattenti silenziosi.",
+        "prezzo": "129.00"
+      },
+      {
+        "id": "002",
+        "marca": "Crimson Blade",
+        "tipo": "Ruby Edge",
+        "img": "./images/rossa_1.jpg",
+        "img2": "./images/rossa_2.jpg",
+        "img3": "./images/rossa_3.jpg",
+        "descrizione": "Lama rossa lucente con impugnatura ergonomica. Perfetta per collezionisti.",
+        "prezzo": "115.00"
+      },
+      {
+        "id": "003",
+        "marca": "Blue Fang",
+        "tipo": "Azure Strike",
+        "img": "./images/azure_1.jpg",
+        "img2": "./images/azure_2.jpg",
+        "img3": "./images/azure_3.jpg",
+        "descrizione": "Design leggero con lama blu cobalto. Unione tra tradizione e modernità.",
+        "prezzo": "99.00"
+      }
+    ]
+  }
+  

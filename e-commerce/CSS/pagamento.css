@@ -1,0 +1,141 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #2c2c3e;
+  box-shadow: 0 2px 10px rgba(0, 191, 255, 0.1);
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #ff6b6b;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(255, 107, 107, 0.3);
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link {
+  color: #f1f1f1;
+  transition: color 0.3s ease;
+}
+
+.nav-link:focus {
+  color: #ffa502;
+}
+
+.nav-link.active {
+  color: #00bfff;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #2c2c3e;
+  border: none;
+}
+
+.navbar-toggler:focus {
+  background-color: #2c2c3e;
+  box-shadow: none;
+}
+
+.dropdown-menu {
+  background-color: #2c2c3e;
+  border: none;
+}
+
+.dropdown-item {
+  color: #f1f1f1;
+}
+
+.dropdown-item:hover {
+  background-color: #ffa502;
+  color: #2c2c3e;
+}
+
+h1 {
+  text-align: center;
+  padding: 100px 20px 20px;
+  color: #ffa502;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.scontrino {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #2c2c3e;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 165, 2, 0.1);
+}
+
+.scontrino table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.scontrino th, .scontrino td {
+  padding: 10px;
+  text-align: left;
+  color: #f1f1f1;
+}
+
+.scontrino th {
+  color: #ffa502;
+  border-bottom: 1px solid #888;
+}
+
+.totale {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+button {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+  border: solid 2px #3498db;
+  border-radius: 40px;
+  background-color: #2c2c3e;
+  color: #3498db;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+button:hover {
+  background-color: #ffa502;
+  color: #2c2c3e;
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6);
+}
+
+footer {
+  color: #888;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
