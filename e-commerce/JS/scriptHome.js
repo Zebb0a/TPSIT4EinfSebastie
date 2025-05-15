@@ -50,8 +50,8 @@ fetch("./prodotti.json")
         var centerY = rect.height / 2;
         var diffX = mouseX - centerX;
         var diffY = centerY - mouseY;
-        var x = diffX / 20;
-        var y = diffY / 20;
+        var x = diffX / 35;
+        var y = diffY / 35;
         card.style.transform = "rotateX(" + y + "deg) rotateY(" + x + "deg) scale(1.03)";
       };
 
