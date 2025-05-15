@@ -27,11 +27,11 @@ if (carrello.length == 0) {
     container.appendChild(item);
 
     var bottone = item.getElementsByClassName("rimuovi-btn")[0];
-    bottone.onclick = creaFunzioneRimozione(p);
+    bottone.onclick = FunzioneRimuovi(p);
   }
 }
 
-function creaFunzioneRimozione(prodotto) {
+function FunzioneRimuovi(prodotto) {
   return function() {
     var nuovoCarrello = [];
     for (var i = 0; i < carrello.length; i++) {
