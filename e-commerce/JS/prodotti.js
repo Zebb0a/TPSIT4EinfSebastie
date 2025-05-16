@@ -64,7 +64,6 @@ var tuttiProdotti = [];
 
     var filtro = document.getElementById("filtro-genere");
     filtro.onclick = function(event) {
-      event.preventDefault();
       var target = event.target;
       if (target.tagName == "A") {
         var tipo = target.getAttribute("data-tipo");
