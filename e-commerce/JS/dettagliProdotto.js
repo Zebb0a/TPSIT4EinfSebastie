@@ -83,7 +83,7 @@ function aggiornaStelle() {
 }
 
 function salvaValutazione() {
-  var commento = document.getElementById("commento").value.trim();
+  var commento = document.getElementById("commento").value;
   if (!votoSelezionato || commento == "") {
     alert("Compila tutti i campi!");
     return;
